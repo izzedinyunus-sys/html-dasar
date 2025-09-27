@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Table di HTML</title>
+    <style>
+      table {
+        width: 60%;
+        /** gabungkan border tabel jadi 1 **/
+        border-collapse: collapse;
+      }
+      /* pakai , (koma) agar bisa di terapkan multiple efek */
+      td,
+      th {
+        padding: 6px;
+      }
+      th {
+        background-color: rgb(0, 0, 0);
+        color: rgb(42, 186, 23);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar Table di HTML</h1>
+    <hr />
+    <!-- attr border 1 => garis tepi 1px -->
+    <table border="1">
+      <!-- tr>td*3: buat struktur baris x 3 kolom -->
+      <tr>
+        <td>No</td>
+        <td>Nama Lengkap</td>
+        <td>Asal Kota/Kab</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Udin</td>
+        <td>Grewsik, Jawa Timur</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bagong</td>
+        <td>Purwerejo</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Tung Tung Sahur</td>
+        <td>Mars</td>
+      </tr>
+    </table>
+
+    <!-- standar table di html 5 -->
+    <!-- table>thead+tbody+tfoot -->
+    <h2>Daftar Belanja</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Barang</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Diplomat</td>
+          <td>Rp 14.000,-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Odading</td>
+          <td>Rp 5.000,-</td>
+        </tr>
+         <tr>
+          <td>3</td>
+          <td>Panther</td>
+          <td>Rp 5.000,-</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Komix</td>
+          <td>Rp 15.000,-</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td><b>Total Pengeluaran</b></td>
+          <td><b>Rp 39.000,-</b></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Daftar Piket</h2>
+    <p>Belajar attribute `rowspan` dan `colspan`</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2">No</th>
+          <th colspan="7">Pekan 1</th>
+        </tr>
+        <tr>
+          <!-- hilangkan th yg di awal karna sdh rowspan -->
+          <th>Senin</th>
+          <th>Selasa</th>
+          <th>Rabu</th>
+          <th>Kamis</th>
+          <th>Jum'at</th>
+          <th>Sabtu</th>
+          <th>Ahad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ijong</td>
+          <td>Jieh</td>
+          <td colspan="2">Gojo Slamet</td>
+          <td rowspan="2">Eren Aditya</td>
+          <td>Andi</td>
+          <td>Jalal</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Koko</td>
+          <td>Kardun</td>
+          <td>Ucok</td>
+          <td>Demong</td>
+          <!-- <td>Adit</td> -->
+          <td>Pebri</td>
+          <td>Ulil😆</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br /><br />
+    <br /><br /><br />
+  </body>
+</html>
