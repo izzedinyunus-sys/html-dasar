@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Jadwal Kegiatan Santri (Mingguan)</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Jadwal Kegiatan Santri (Mingguan)</h1>
+      <p class="lead">
+        Contoh jadwal terstruktur — gabungan kegiatan ibadah, sekolah, olahraga,
+        dan waktu istirahat.
+      </p>
+
+      <div class="card" role="region" aria-label="Jadwal mingguan santri">
+        <table aria-describedby="keterangan-jadwal">
+          <caption
+            id="keterangan-jadwal"
+            style="
+              caption-side: bottom;
+              text-align: left;
+              color: var(--muted);
+              padding-top: 8px;
+            "
+          >
+            Waktu dalam format 24 jam. Kolom Senin–Jumat dibagi pagi & sore
+            (menggunakan colspan & rowspan pada header).
+          </caption>
+
+          <!-- thead: menggunakan rowspan & colspan -->
+          <thead>
+            <tr>
+              <th rowspan="2" class="time">Waktu</th>
+              <th colspan="2">Senin – Jumat</th>
+              <th rowspan="2">Sabtu</th>
+              <th rowspan="2">Minggu</th>
+            </tr>
+            <tr>
+              <th>Pagi / Siang</th>
+              <th>Sore / Malam</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- 1 -->
+            <tr>
+              <td class="time">03:30 - 06:15</td>
+              <td class="activity">
+                sholat malam, Subuh berjamaah, Bahasa arab / (muroja'ah bahasa
+                arab)
+              </td>
+              <td class="activity">
+                ruangguru yang gak ada bebas / kegiatan sore
+              </td>
+              <td class="activity">
+                sholat malam, Subuh berjamaah, Bahasa arab / (muroja'ah bahasa
+                arab)
+              </td>
+              <td class="activity">
+                Olahraga pagi bersama (berenang / jogging / futsal)
+              </td>
+            </tr>
+
+            <!-- 2 -->
+            <tr>
+              <td class="time">07:00 - 10:15</td>
+              <td class="activity">Kegiatan sekolah (bahasa arab)</td>
+              <td class="activity">Waktu bebas / pelajaran it</td>
+              <td class="activity">
+                kayak hari biasa full pelajaran bahasa arab
+              </td>
+              <td class="activity">
+                Waktu keluarga / telpon orang tua (jika tidak di hukum)
+              </td>
+            </tr>
+
+            <!-- 3 -->
+            <tr>
+              <td class="time">13:00 - 14:47</td>
+              <td class="activity">
+                Dzuhur berjamaah, istirahat & makan siang, pelajaran bahasa arab
+              </td>
+              <td class="activity">Belajar sore pelajaran ruangguru</td>
+              <td class="activity">pelajaran bahasa arab</td>
+              <td class="activity">Bebas</td>
+            </tr>
+
+            <!-- 4 -->
+            <tr>
+              <td class="time">15:30 - 17:00</td>
+              <td class="activity">
+                Kegiatan ekstrakurikuler (ngoding, olahraga, seni)
+              </td>
+              <td class="activity">
+                Mandi sore, Maghrib berjamaah, kajian singkat
+              </td>
+              <td class="activity">Kerja bakti asrama / kegiatan sosial</td>
+              <td class="activity">Bebas</td>
+            </tr>
+
+            <!-- 5 -->
+            <tr>
+              <td class="time">19:00 - 22:00</td>
+              <td class="activity">
+                Belajar malam / setoran hafalan / tugas sekolah
+              </td>
+              <td class="activity">
+                Isya berjamaah, kajian malam, persiapan tidur
+              </td>
+              <td class="activity">
+                Malam santai: diskusi kelompok / refleksi
+              </td>
+              <td class="activity">Persiapan tidur & evaluasi mingguan</td>
+            </tr>
+
+            <!-- 6 (opsional tambahan) -->
+            <tr>
+              <td class="time">22:00 - 04:30</td>
+              <td class="activity" colspan="2">
+                Istirahat malam (tidur). Pastikan jam cukup untuk pemulihan.
+              </td>
+              <td class="activity">Istirahat malam</td>
+              <td class="activity">Istirahat malam</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="links"></div>
+      <a href="index.html">⬅ Kembali</a>
+    </div>
+  </body>
+</html>

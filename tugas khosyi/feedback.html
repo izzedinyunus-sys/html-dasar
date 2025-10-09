@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Santri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Form Feedback</h1>
+    <hr>
+
+    <form action="https://httpbin.org/post" method="post">
+      <label>Nama Lengkap:</label><br>
+      <input type="text" name="nama" required><br><br>
+
+      <label>Umur:</label><br>
+      <input type="number" name="umur"><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email"><br><br>
+
+      <label>Jenis Kelamin:</label><br>
+      <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+      <input type="radio" name="jk" value="Perempuan"> Perempuan<br><br>
+
+      <label>Hobi:</label><br>
+      <input type="checkbox" name="hobi" value="Ngoding"> Ngoding
+      <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+      <input type="checkbox" name="hobi" value="Membaca"> Membaca<br><br>
+
+      <label>Kesan:</label><br>
+      <select name="kesan">
+        <option value="Bagus">Bagus</option>
+        <option value="Cukup">Cukup</option>
+        <option value="Kurang">Kurang</option>
+      </select><br><br>
+
+      <label>Pesan:</label><br>
+      <textarea name="pesan" rows="4" cols="40"></textarea><br><br>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div class="links">
+      <a href="index.html">⬅ Kembali</a>
+    </div>
+  </div>
+</body>
+</html>

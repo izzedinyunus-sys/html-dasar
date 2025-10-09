@@ -1,0 +1,114 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: #121212;        /* warna dasar gelap */
+  color: #e0e0e0;             /* teks abu terang */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Heading Utama */
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #00c6ff;             /* biru neon */
+  margin-bottom: 10px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+/* Garis */
+hr {
+  border: none;
+  height: 3px;
+  background: #333;
+  width: 60%;
+  margin: 0 auto 30px;
+  border-radius: 5px;
+}
+
+/* Box */
+.box {
+  background: #1e1e1e;        /* kotak abu gelap */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto 25px;
+  max-width: 700px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.3);
+}
+
+/* Judul di dalam Box */
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #00c6ff;
+  border-left: 4px solid #6a11cb;
+  padding-left: 10px;
+}
+
+/* Gambar */
+img,
+img.photo,
+img.avatar {
+  display: block;
+  margin: 0 auto 15px;
+  width: 150px;
+  height: auto;
+  border: 3px solid #00c6ff;
+  border-radius: 6px;            /* kotak rapi */
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
+  object-fit: cover;
+}
+
+/* Foto profil / avatar */
+img.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;            /* bulat */
+}
+
+/* List */
+ul, ol {
+  margin-left: 20px;
+  text-align: left;
+}
+
+/* Link / Tombol */
+a {
+  color: #fff;
+  background: #00c6ff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #6a11cb;
+}
+
+/* Navigasi link (bawah) */
+.links {
+  text-align: center;
+  margin-top: 20px;
+}

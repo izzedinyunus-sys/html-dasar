@@ -1,0 +1,212 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: #121212;       /* tema gelap */
+  color: #e4e4e4;            /* teks abu terang */
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Container utama */
+.container, .wrap {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+}
+
+.container:hover, .wrap:hover {
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.3);
+}
+
+/* Heading Utama */
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+h3.section-title {
+  margin-bottom: 10px;
+  color: #00c6ff;
+  border-left: 5px solid #6a11cb;
+  padding-left: 8px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+/* Garis */
+hr {
+  margin: 15px 0;
+  border: none;
+  height: 3px;
+  background: #333;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 auto 25px;
+}
+
+/* Box */
+.box {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  background: #1b1b1b;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,198,255,0.3);
+}
+
+/* Gambar */
+.foto, .box img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: 3px solid #00c6ff;
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
+}
+
+/* Link navigasi */
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  text-decoration: none;
+  background: #00c6ff;
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #6a11cb;
+}
+
+/* Form Feedback */
+form {
+  margin-top: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #00c6ff;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #6a11cb;
+}
+
+/* Galeri */
+.minat-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.minat-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.minat-text {
+  flex: 1;
+  line-height: 1.6;
+}
+
+/* Tabel jadwal */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background: #00c6ff;
+  color: white;
+  padding: 10px;
+}
+
+tbody td, tbody th {
+  border: 1px solid #333;
+  padding: 10px;
+  vertical-align: top;
+  color: #ddd;
+}
+
+td.time {
+  background: #1e1e1e;
+  font-weight: bold;
+  text-align: center;
+  color: #00c6ff;
+}
+
+td.activity {
+  background: #222;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .minat-wrapper {
+    flex-direction: column;
+  }
+
+  .minat-images {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
