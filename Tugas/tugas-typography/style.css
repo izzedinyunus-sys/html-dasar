@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'BismillahScript';
+    src: url(fonts/Bismillah\ Script.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    font-size: 16px; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.page-header {
+    background-color: #e6f3ff;
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-top: 1px solid #cceeff;
+    border-bottom: 1px solid #cceeff;
+}
+
+.page-header h1 {
+    font-family: 'Playfair Display', serif; 
+    color: #1e6091; 
+    font-size: 2.5em; 
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+article {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+    color: #38761d;
+    font-size: 1.8em; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.content-body p {
+    line-height: 1.8;
+    text-align: justify;
+    word-spacing: 2px;
+    margin-bottom: 1.5em;
+}
+.highlight-text {
+    color: #e06666;
+    font-weight: 600;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+.quote-box {
+    background-color: #d9e9f8;
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #b3cde0;
+}
+
+.quote-box p {
+    font-style: italic;
+    color: #2e6c8e;
+    margin: 0 0 5px 0;
+}
+
+.quote-box footer {
+    text-align: right;
+    font-size: 0.9em;
+    color: #2e6c8e;
+}
+
+.note-box {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 20px;
+    border-left: 5px solid #e06666;
+    background-color: #fff;
+    margin-bottom: 40px;
+    color: #e06666;
+    font-weight: 600;
+}
+
+.note-icon {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.signature-area {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.signature-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: -15px; 
+}
+
+.signature-name {
+    font-family: 'BismillahScript', cursive; 
+    font-size: 3.5em; 
+    color: #c90000;
+    line-height: 1;
+    margin: 0;
+    transform: skewX(-5deg); 
+    display: inline-block;
+}

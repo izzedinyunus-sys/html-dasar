@@ -1,0 +1,98 @@
+/* card sebagai layout dasar */
+.card {
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 2px #ccc;
+  padding: 6px;
+  text-align: center;
+}
+/* box polos hanya konten */
+#box1 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  color: white;
+  line-height: 10;
+}
+/* box dengan padding */
+#box2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  line-height: 10;
+  /* padding: 10px; */
+  /* padding: 12px 20px 12px 20px */
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+/* box dengan padding + border */
+#box3 {
+  width: 200px;
+  height: 200px;
+  background-color: indigo;
+  color: white;
+  line-height: 10;
+  padding: 10px;
+  border: 5px solid aqua;
+}
+/* box dengan padding + border + margin */
+/* jarak di luar box */
+#box4 {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  color: white;
+  line-height: 10;
+  padding: 10px;
+  border: 5px solid tomato;
+  /* margin: 20px; */
+  /* margin: 20px 10px 20px 10px; */
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+/* css position */
+#box5 {
+  width: 200px;
+  height: 200px;
+  background-color: maroon;
+  color: white;
+  line-height: 10;
+}
+#box6 {
+  width: 200px;
+  height: 200px;
+  background-color: moccasin;
+  color: white;
+  line-height: 10;
+  /* atur posisi mengikuti box */
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+#box7 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  color: white;
+  line-height: 10;
+  /* atur posisi mengikuti box relative diatasnya */
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+#box8 {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  color: white;
+  line-height: 10;
+  /* atur posisi mengikuti ukuran layar */
+  position: fixed;
+  top: 25px;
+  right: 40px;
+}

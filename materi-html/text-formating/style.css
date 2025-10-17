@@ -1,0 +1,82 @@
+/* import font dari google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+.playwrite {
+  font-family: 'Playwrite DE SAS', cursive;
+}
+
+@font-face {
+  font-family: 'Font Digital';
+  src: url('fonts/digital-7.ttf');
+}
+.digital {
+  font-family: 'Font Digital';
+}
+
+/* atur posisi teks */
+.text-tengah {
+  text-align: center;
+}
+.text-kiri {
+  text-align: left;
+}
+.text-kanan {
+  text-align: right;
+}
+.text-rata {
+  text-align: justify;
+}
+
+.tipis {
+  color: gold;
+  /* atur ketebalan */
+  font-weight: 100;
+  /* atur ukuran */
+  font-size: small;
+}
+.agak-tebal {
+  color: indianred;
+  font-weight: 500;
+  font-size: 30px;
+}
+.tebal {
+  /* bold = 700 */
+  font-weight: bold;
+  color: indigo;
+  font-size: x-large;
+}
+/* hilangkan underline pada link (a) */
+.button-google {
+  text-decoration: none;
+  background-color: tomato;
+  color: white;
+  padding: 4px 6px;
+}
+
+/* atur jarak tinggi antar baris teks */
+.pendek {
+  line-height: 0.8;
+  background-color: coral;
+}
+.tinggi {
+  line-height: 2;
+  background-color: chartreuse;
+}
+/* atur jarak antar huruf */
+.rapat {
+  letter-spacing: -2px;
+  background-color: skyblue;
+}
+.renggang {
+  letter-spacing: 6px;
+  background-color: plum;
+}
+/* atur jarak antar kata */
+.dekat {
+  word-spacing: -3px;
+  background-color: aqua;
+}
+.jauh {
+  word-spacing: 6px;
+  background-color: gold;
+}
