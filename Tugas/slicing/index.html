@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Pesantren Al-Furqon Al-Islami - Full Page</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0066ff;
+            --success-color: #198754;
+            --dark-color: #212529;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-color);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Customization */
+        .navbar-brand { font-size: 1.1rem; line-height: 1.2; }
+        .nav-link:hover { color: #ffc107 !important; }
+
+        /* Section Spacing */
+        section { padding: 100px 0; border-bottom: 1px solid #f0f0f0; }
+        
+        /* Offset for sticky navbar */
+        section[id] { scroll-margin-top: 80px; }
+
+        .hero-section { background: #f8f9fa; padding: 120px 0; }
+        .bg-success-custom { background-color: var(--success-color) !important; }
+        
+        /* Card & Table Styling from your original layout */
+        .card { border-radius: 12px; border: none; }
+        .table thead { background-color: var(--success-color); color: white; }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#beranda">
+                PONDOK PESANTREN <br> <span class="fs-6">Al-Furqon Al-Islami</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kabar">Kabar & Pengumuman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#psb">Informasi PSB</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kalender">Kalender Akademik</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Lembaga Pendidikan Islam Berbarokah & Profesional</h1>
+                    <p class="lead mb-4 text-muted">Berasaskan Al-Qur’an dan Hadits sesuai dengan pemahaman salafush shalih di dalam tatanan Negara Kesatuan Republik Indonesia.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#psb" class="btn btn-success btn-lg px-4 shadow">Daftar Sekarang</a>
+                        <a href="#tentang" class="btn btn-outline-success btn-lg px-4">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 text-center">
+                    <img src="https://www.alfurqongresik.com/wp-content/uploads/elementor/thumbs/Frame-347-qu9qlsu7q4njnd76q1qjp1sa6nz2l5te33omfp70xo.png" class="img-fluid rounded-4 shadow-lg" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kabar">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Kabar & Pengumuman</h2>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <article class="card shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary mb-3">Penting</span>
+                            <h3 class="fw-bold h4">Penerimaan Santri Baru (PSB) Tahun Ajaran 2026/2027</h3>
+                            <p class="text-muted">Kami membuka kesempatan bagi calon santri untuk bergabung dan menimba ilmu di lingkungan yang islami. Pendaftaran akan dibuka dalam beberapa gelombang. Kami mengundang orang tua dan calon santri untuk segera mempersiapkan berkas pendaftaran yang diperlukan.</p>
+                            <p class="text-muted">Proses pendaftaran dilakukan secara online melalui portal resmi kami. Pastikan Anda membaca seluruh persyaratan yang ada di bagian Informasi PSB di bawah ini.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Diposting pada: 15 Maret 2024</small>
+                                <a href="#psb" class="btn btn-sm btn-outline-primary">Lihat Persyaratan</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success mb-3">Kegiatan</span>
+                            <h3 class="fw-bold h4">Laporan Kegiatan Muhadharah Mingguan</h3>
+                            <p class="text-muted">Kegiatan rutin santri dalam melatih kemampuan berbicara di depan umum dan penyampaian materi dakwah yang telah dilaksanakan dengan khidmat. Setiap santri diberikan kesempatan untuk menyampaikan ceramah singkat dalam Bahasa Arab dan Indonesia.</p>
+                            <p class="text-muted">Tujuannya adalah untuk melatih mental, kemampuan retorika, dan pemahaman materi yang telah dipelajari selama di kelas.</p>
+                            <hr>
+                            <small class="text-muted">Diposting pada: 10 Maret 2024</small>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card bg-light p-4 mb-4">
+                        <h5 class="fw-bold border-bottom pb-2 mb-3">Arsip Berita</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Maret 2024 (5)</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Februari 2024 (8)</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Januari 2024 (3)</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Desember 2023 (10)</a></li>
+                        </ul>
+                    </div>
+                    <div class="card bg-success text-white p-4">
+                        <h5 class="fw-bold mb-3">Langganan Informasi</h5>
+                        <p class="small">Dapatkan pengumuman terbaru langsung ke email Anda.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-sm" placeholder="Email Anda">
+                            <button class="btn btn-warning btn-sm">Daftar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://www.alfurqongresik.com/wp-content/uploads/elementor/thumbs/Frame-347-qu9qlsu7q4njnd76q1qjp1sa6nz2l5te33omfp70xo.png" class="img-fluid rounded-4 shadow" alt="Profil Pesantren">
+                </div>
+                <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                    <h2 class="fw-bold mb-4">Tentang Pondok Pesantren Al-Furqon Al-Islami</h2>
+                    <p>Pondok Pesantren Al-Furqon Al-Islami didirikan pada tanggal 13 Juli 1989 (10 Dzulhijjah 1409 H) di Desa Srowo, Sidayu, Gresik oleh Al-Ustadz Aunur Rofiq bin Ghufron, Lc.</p>
+                    <p>Beliau merupakan alumni Universitas Muhammad bin Su’ud Riyadh, Saudi Arabia, Cabang Lembaga Ilmu Islam dan Arab (LIPIA) Jakarta. Keinginan beliau adalah menyebarkan ilmu agama yang murni sesuai tuntunan Rasulullah ﷺ dan para sahabat beliau.</p>
+                    
+                    <h5 class="fw-bold mt-4">Visi & Misi</h5>
+                    <p>Menjadi lembaga pendidikan Islam yang terdepan dalam mencetak generasi Rabbani yang beraqidah lurus, berakhlaq mulia, dan bermanfaat bagi nusa dan bangsa.</p>
+                    
+                    <div class="row mt-4 g-3">
+                        <div class="col-6 col-md-4 text-center">
+                            <div class="p-3 border rounded bg-white shadow-sm">
+                                <h3 class="fw-bold text-success mb-0">34+</h3>
+                                <small class="text-muted">Tahun Berdiri</small>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 text-center">
+                            <div class="p-3 border rounded bg-white shadow-sm">
+                                <h3 class="fw-bold text-success mb-0">1500+</h3>
+                                <small class="text-muted">Santri</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="psb">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Penerimaan Santri Baru (PSB)</h2>
+                <p class="text-muted">Ikuti langkah-langkah dan penuhi persyaratan berikut untuk bergabung.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border p-4 shadow-sm">
+                        <h4 class="fw-bold mb-3 border-bottom pb-2 text-success">Persyaratan Umum</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-success">✓</span> Beragama Islam dan berakhlak mulia.</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-success">✓</span> Lulus jenjang pendidikan sebelumnya (SD/MI/SMP/MTs).</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-success">✓</span> Sehat jasmani dan rohani (dibuktikan surat dokter).</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-success">✓</span> Siap mukim di dalam asrama pesantren.</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-success">✓</span> Menyetujui tata tertib pesantren.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 border p-4 shadow-sm">
+                        <h4 class="fw-bold mb-3 border-bottom pb-2 text-success">Berkas Administrasi</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-primary">📁</span> Fotokopi Akta Kelahiran & Kartu Keluarga (3 Lembar).</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-primary">📁</span> Fotokopi Ijazah terakhir yang dilegalisir.</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-primary">📁</span> Pas Foto 3x4 Background Merah (5 Lembar).</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-primary">📁</span> Fotokopi KTP Orang Tua / Wali.</li>
+                            <li class="list-group-item d-flex align-items-center"><span class="me-2 text-primary">📁</span> Surat Keterangan Kelakuan Baik (SKKB).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 bg-light p-5 rounded-4 border">
+                <h4 class="fw-bold text-center mb-4">Alur Pendaftaran Online</h4>
+                <div class="row text-center g-4">
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 rounded shadow-sm border-top border-4 border-success">
+                            <h5 class="fw-bold">1. Registrasi</h5>
+                            <p class="small text-muted mb-0">Buat akun di website pendaftaran.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 rounded shadow-sm border-top border-4 border-success">
+                            <h5 class="fw-bold">2. Isi Data</h5>
+                            <p class="small text-muted mb-0">Lengkapi biodata dan unggah berkas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 rounded shadow-sm border-top border-4 border-success">
+                            <h5 class="fw-bold">3. Pembayaran</h5>
+                            <p class="small text-muted mb-0">Bayar biaya seleksi via transfer.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 rounded shadow-sm border-top border-4 border-success">
+                            <h5 class="fw-bold">4. Tes Seleksi</h5>
+                            <p class="small text-muted mb-0">Ikuti tes sesuai jadwal yang ditentukan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kalender" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Kalender Akademik</h2>
+                <p class="text-muted">Agenda kegiatan pendidikan Pondok Pesantren Semester Ganjil 2024/2025.</p>
+            </div>
+            
+            <div class="card shadow-sm border-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-success">
+                            <tr>
+                                <th class="py-3 px-4" style="width: 20%;">Bulan</th>
+                                <th class="py-3">Kegiatan / Agenda</th>
+                                <th class="py-3 text-center" style="width: 25%;">Tanggal Pelaksanaan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 fw-bold">Juli 2024</td>
+                                <td>Kedatangan Santri Baru & Masa Orientasi (MPLS)</td>
+                                <td class="text-center"><span class="badge bg-outline-success text-success border border-success">15 - 20 Juli 2024</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 fw-bold">Agustus 2024</td>
+                                <td>Peringatan Hari Kemerdekaan RI ke-79 & Lomba Santri</td>
+                                <td class="text-center"><span class="badge bg-outline-success text-success border border-success">17 - 18 Agustus 2024</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 fw-bold">September 2024</td>
+                                <td>Ujian Tengah Semester (UTS) Ganjil</td>
+                                <td class="text-center"><span class="badge bg-outline-success text-success border border-success">23 - 28 September 2024</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 fw-bold">Oktober 2024</td>
+                                <td>Pembagian Raport UTS & Pertemuan Wali Santri</td>
+                                <td class="text-center"><span class="badge bg-outline-success text-success border border-success">12 Oktober 2024</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 fw-bold">November 2024</td>
+                                <td>Kegiatan Outbound & Rihlah Ilmiyah Santri</td>
+                                <td class="text-center"><span class="badge bg-outline-success text-success border border-success">05 November 2024</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 fw-bold">Desember 2024</td>
+                                <td>Ujian Akhir Semester (UAS) Ganjil</td>
+                                <td class="text-center"><span class="badge bg-outline-success text-success border border-success">09 - 14 Desember 2024</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 fw-bold">Desember 2024</td>
+                                <td>Libur Semester Ganjil</td>
+                                <td class="text-center"><span class="badge bg-outline-danger text-danger border border-danger">16 - 31 Desember 2024</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h5 class="fw-bold mb-4">PONDOK PESANTREN <br> Al-Furqon Al-Islami</h5>
+                    <p class="text-white-50">Lembaga pendidikan Islam yang berpegang teguh pada Al-Qur'an dan Sunnah dengan pemahaman Salafush Shalih. Kami berdedikasi menciptakan generasi yang unggul secara adab dan ilmu.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-4">Tautan Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda" class="text-white-50 text-decoration-none">Beranda</a></li>
+                        <li class="mb-2"><a href="#kabar" class="text-white-50 text-decoration-none">Kabar & Pengumuman</a></li>
+                        <li class="mb-2"><a href="#tentang" class="text-white-50 text-decoration-none">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="#psb" class="text-white-50 text-decoration-none">Informasi PSB</a></li>
+                        <li class="mb-2"><a href="#kalender" class="text-white-50 text-decoration-none">Kalender Akademik</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-4">Kontak Kami</h5>
+                    <p class="text-white-50 mb-2">📍 Jl. Perikanan, Desa Srowo, Kec. Sidayu, Kabupaten Gresik, Jawa Timur 61153</p>
+                    <p class="text-white-50 mb-2">📞 +62 813-9699-6991</p>
+                    <p class="text-white-50 mb-2">✉️ info@alfurqongresik.com</p>
+                    <p class="text-white-50">🌐 www.alfurqongresik.com</p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white-50 small">
+                &copy; 2024 Pondok Pesantren Al-Furqon Al-Islami. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

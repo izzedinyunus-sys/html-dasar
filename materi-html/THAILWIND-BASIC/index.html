@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind CSS Basic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Konfigurasi Tailwind untuk dark mode 'class'
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+  </head>
+  <!-- dark: => untuk mengatur class saat dark mode -->
+  <body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+    <!-- container = area dengan jarak di kiri kanan -->
+    <!-- mx-auto = margin left right auto = biar ketengah  -->
+    <!-- p-4 = padding 1 rem (16px) -->
+    <!-- bg-blue-200 = background biru kecerahan 200 -->
+    <div class="container mx-auto p-4 bg-blue-200 dark:bg-blue-900">
+      <h1 class="text-6xl font-bold underline mb-5">Hello world!</h1>
+      <!-- styling buttons -->
+      <!-- hover: => saat element di arahkan -->
+      <!-- rounded-full => border radius bulat full -->
+      <!-- px-5 => padding x (left-right) -->
+      <!-- py-2 => padding y (top-bottom) -->
+      <!-- text-sm => text small (kecil) -->
+      <!-- font-semibold => text agak tebal -->
+      <button
+        type="button"
+        class="bg-green-600 hover:bg-red-700 text-white hover:text-black rounded-full px-5 py-2 text-sm font-semibold"
+      >
+        Simpan Data
+      </button>
+
+      <button
+        id="darkModeToggle"
+        class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700"
+      >
+        Toggle Dark Mode
+      </button>
+    </div>
+
+    <!-- script di bawah ini untuk mengatur dark mode -->
+    <script>
+      const htmlElement = document.documentElement
+      const toggleBtn = document.getElementById('darkModeToggle')
+
+      function updateButtonLabel() {
+        if (htmlElement.classList.contains('dark')) {
+          toggleBtn.textContent = 'Dark Mode: On'
+        } else {
+          toggleBtn.textContent = 'Dark Mode: Off'
+        }
+      }
+
+      // Set label saat awal load halaman sesuai setting dark mode
+      if (localStorage.getItem('theme') === 'dark') {
+        htmlElement.classList.add('dark')
+      }
+      updateButtonLabel()
+
+      toggleBtn.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark')
+        if (htmlElement.classList.contains('dark')) {
+          localStorage.setItem('theme', 'dark')
+        } else {
+          localStorage.removeItem('theme')
+        }
+        updateButtonLabel()
+      })
+    </script>
+  </body>
+</html>
+
+
+
+
+

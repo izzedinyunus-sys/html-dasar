@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Demo</title>
+    <!-- load bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- container: memberi jarak kiri-kanan, agar tidak mepet -->
+    <!-- varian warna/color di bootstrap  -->
+    <!-- primary / success / info / warning / danger -->
+    <div class="container bg-light">
+      <h1 class="text-primary">Hello, world!</h1>
+      <div class="alert alert-warning" role="alert">
+        <strong class="bg-danger border border-danger text-white">
+          PERINGATAN!
+        </strong>
+        Terjadi kebakaran di depan olive chicken!
+      </div>
+
+      <button type="button" class="btn btn-success">Simpan Data</button>
+      <button type="reset" class="btn btn-danger">Reset Data</button>
+      <hr />
+      <!-- layout responsive -->
+      <!-- wajib di bungkus dengan class `row` -->
+      <!-- patokan grid nya berjumlah 12 kolom -->
+      <div class="row">
+        <!-- .col-6 : tulis class div dengan class khusus -->
+        <!-- 2 kolom = 6 + 6 = 12 grid -->
+        <div class="col-6 bg-info">
+          <h2>KOLOM KIRI</h2>
+        </div>
+        <div class="col-6 bg-success">
+          <h2>KOLOM KANAN</h2>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- .row>.col-3*4>img : bikin layout 4 kolom img -->
+      <div class="row">
+        <!-- layar medium ke atas 4 kolom: col-md-3 -->
+        <!-- layar kecil 2 kolom: col-sm-6 -->
+        <!-- layar super kecil 1 kolom: col-12 -->
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1588754850431-04d4f3b11031?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kb25lc2lhfGVufDB8MnwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1629130734874-9b4dbd38a4c3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kb25lc2lhfGVufDB8MnwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1653798402576-a82513fa52c1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5kb25lc2lhfGVufDB8MnwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1618717941236-e55308b3c6b2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluZG9uZXNpYXxlbnwwfDJ8MHx8fDI%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-6 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kb25lc2lhfGVufDB8MHwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-6 col-sm-6 col-12">
+          <img
+            class="img-thumbnail"
+            src="https://media.istockphoto.com/id/1277716260/nl/foto/stadsmonumenten-van-gresik-oost-java-indonesi%C3%AB.jpg?s=612x612&w=0&k=20&c=5sIZuXyth-IVI8TNIb86A3M0tQLAdAx5y9XOGVCk8XI="
+          />
+        </div>
+      </div>
+      <!-- end row -->
+
+      <hr />
+      <h2>TABEL INTERAKTIF</h2>
+      <!-- buat tabel -->
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Ari</td>
+            <td>Irpan</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Ulil</td>
+            <td>Jalal</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Aulia</td>
+            <td>Dornyong</td>
+            <td>@social</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr />
+      <h2>FORM INTERAKTIF</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- container-fluid: full width 100% -->
+    <!-- <div class="container-fluid bg-danger">
+      <h1>Fluid Width 100%!</h1>
+      <p>P.. ingpo bang kebakaran manyala!</p>
+    </div> -->
+
+    <!-- load bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html

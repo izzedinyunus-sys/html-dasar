@@ -73,6 +73,7 @@ nav a.active, nav a:hover {
   object-fit: cover;
 }
 
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -101,6 +102,14 @@ nav a.active, nav a:hover {
 .gallery img {
   width: 100%;
   border-radius: 10px;
+}
+
+.vid iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 315px;
+  display: block;
+  margin: 0 auto;
 }
 
 form {
@@ -136,3 +145,47 @@ form .submit {
   background: #1e3a8a;
   color: white;
 }
+
+@media (max-width: 768px) {
+  /* Saat layar kecil (HP/tablet) */
+  nav {
+    flex-wrap: wrap; /* Menu bisa turun ke baris bawah */
+  }
+  .gallery {
+    grid-template-columns: 1fr; /* Galeri jadi 1 kolom */
+  }
+  .video-container iframe {
+    height: 220px; /* Tinggi video menyesuaikan layar kecil */
+  }
+}
+
+/* MEDIA QUERY: Mengubah tata letak navigasi menjadi 1 kolom di layar kecil (Mobile) */
+@media (max-width: 600px) {
+  .main-nav ul {
+    flex-direction: column; /* Mengubah arah tumpukan item menjadi vertikal */
+    align-items: stretch; /* Memaksa item mengisi seluruh lebar container */
+  }
+  .main-nav li {
+    width: 100%; /* Memastikan setiap list item mengambil lebar penuh */
+  }
+  .main-nav a {
+    padding: 10px;
+  }
+}
+
+/* Responsif (untuk layar kecil, misalnya HP) */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.5rem; /* Kecilkan ukuran judul */
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    font-size: 0.95rem; /* Kecilkan subjudul */
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+}
+@media (min-width: 1024px) {
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card-section">
+            <h2 class="section-title">1 Alert Info</h2>
+            <div class="alert info">
+                <i class="material-icons">info</i>
+                <p>Info: Pastikan data anda sudah lengkap sebelum dikirim.</p>
+                <button class="close" onclick="this.parentElement.style.display='none'">×</button>
+            </div>
+        </div>
+
+        <div class="card-section">
+            <h2 class="section-title">2 Profile Card</h2>
+            <div class="profile-card">
+                <div class="profile-img-container">
+                    <img src="assets/fotodiri.jpg" alt="Foto saya" alt="Profile Picture" class="profile-img">
+                    <span class="status active">Active</span>
+                </div>
+                <h3 class="profile-name">Izzedin Fahrizal</h3>
+                <p class="profile-role">Frontend Developer</p>
+            </div>
+        </div>
+
+        <div class="card-section">
+            <h2 class="section-title">3 Pricing Card</h2>
+            <div class="pricing-container">
+                
+                <div class="pricing-card">
+                    <h4 class="plan-title">Basic</h4>
+                    <p class="price">Rp50.000</p>
+                    <ul class="features">
+                        <li>1 Project</li>
+                        <li>Community Support</li>
+                    </ul>
+                    <button class="select-btn">Pilih Paket</button>
+                </div>
+                
+                <div class="pricing-card highlighted">
+                    <h4 class="plan-title">Pro</h4>
+                    <p class="price">Rp150.000</p>
+                    <ul class="features">
+                        <li>5 Projects</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <button class="select-btn primary">Pilih Paket</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h4 class="plan-title">Enterprise</h4>
+                    <p class="price">Rp300.000</p>
+                    <ul class="features">
+                        <li>Unlimited Projects</li>
+                        <li>Dedicated Support</li>
+                    </ul>
+                    <button class="select-btn">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

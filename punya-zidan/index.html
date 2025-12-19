@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | zidan bana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Portfolio</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">
+            <span class="nav-number">01.</span> Home
+          </a>
+          <a href="#about" class="nav-link">
+            <span class="nav-number">02.</span> About
+          </a>
+          <a href="#skills" class="nav-link">
+            <span class="nav-number">03.</span> Skills
+          </a>
+          <a href="#works" class="nav-link">
+            <span class="nav-number">04.</span> Works
+          </a>
+          <a href="#contact" class="nav-link">
+            <span class="nav-number">05.</span> Contact
+          </a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">  
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for opportunities
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-small">Hi, my name is</span>
+            <span class="title-name">Zidan bana abizar</span>
+            <span class="title-tagline">I build things for the web.</span>
+          </h1>
+
+          <p class="hero-description">
+            Saya adalah siswa kelas 10 yang passionate dalam web development dan
+            design. Saya suka membuat website yang tidak hanya cantik, tapi juga
+            fungsional dan user-friendly.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#works" class="btn-primary">
+              <span>Lihat Karya</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>Hubungi Saya</span>
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <a href="#" class="social-item" data-tooltip="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/banaabizar_/" class="social-item" data-tooltip="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/banaabizar_/" class="social-item" data-tooltip="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="code-window">
+              <div class="window-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <div class="code-content" id="codeContent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down">
+        <span>Scroll Down</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M12 5v14M19 12l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02.</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              Halo! Nama saya <span class="highlight">Zidan bana abizar</span>I
+              enjoy creating things that come to life on the internet. My
+              interest in web development began when I first created a simple
+              website using HTML and CSS in 10th grade.
+            </p>
+            <p class="about-description">
+              I am currently focusing on learning JavaScript and various modern
+              frameworks such as React. I am also interested in UI/UX design and
+              how to create outstanding user experiences.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-box">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path
+                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                    />
+                    <path
+                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                    />
+                  </svg>
+                </div>
+                <h4>Pendidikan</h4>
+                <p>SMA IT HSI BS</p>
+                <p class="info-detail">Kelas X</p>
+              </div>
+
+              <div class="info-box">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                    />
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                    <line x1="12" y1="22.08" x2="12" y2="12" />
+                  </svg>
+                </div>
+                <h4>Pengalaman</h4>
+                <p>Freelance Designer</p>
+                <p class="info-detail">2025 - Sekarang</p>
+              </div>
+
+              <div class="info-box">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </div>
+                <h4>Kolaborasi</h4>
+                <p>5+ Projects</p>
+                <p class="info-detail">Tim &amp; Individual</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-wrapper">
+              <!-- overlay -->
+              <div class="image-overlay"></div>
+
+              <!-- profile image -->
+              <div class="profile-image">
+                <img
+                  src="images/image.png"
+                  alt="Profile Image"
+                />
+              </div>
+
+              <!-- border -->
+              <div class="image-border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03.</span>
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills-grid" id="skillsGrid">
+            <!-- Skill card 1 -->
+            <a
+              class="skill-card"
+              href="https://github.com/username"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="skill-card-title">Frontend Development</div>
+              <div class="skill-card-level">Intermediate</div>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </a>
+
+            <!-- Skill card 2 -->
+            <a
+              class="skill-card"
+              href="https://www.figma.com/@username"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="skill-card-title">UI Design</div>
+              <div class="skill-card-level">Intermediate</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Prototype</span>
+                <span class="skill-tag">Responsive</span>
+              </div>
+            </a>
+
+            <!-- Skill card 3 -->
+            <a
+              class="skill-card"
+              href="https://developer.mozilla.org/"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="skill-card-title">Web Performance</div>
+              <div class="skill-card-level">Basic</div>
+              <div class="skill-tags">
+                <span class="skill-tag">SEO</span>
+                <span class="skill-tag">Optimization</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="tools-section">
+          <h3 class="tools-title">Tools & Technologies</h3>
+          <div class="tools-grid" id="toolsGrid">
+            <a
+              class="tool-badge"
+              href="https://code.visualstudio.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="tool-dot"></span>
+              <span class="tool-name">VS Code</span>
+            </a>
+            <a
+              class="tool-badge"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="tool-dot"></span>
+              <span class="tool-name">Git &amp; GitHub</span>
+            </a>
+            <a
+              class="tool-badge"
+              href="https://www.figma.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="tool-dot"></span>
+              <span class="tool-name">Figma</span>
+            </a>
+            <a
+              class="tool-badge"
+              href="https://vercel.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="tool-dot"></span>
+              <span class="tool-name">Vercel</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04.</span>
+          <h2 class="section-title">Featured Works</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+          <!-- Work card 1 -->
+          <a
+            class="work-card"
+            href="https://youtube.com/shorts/P3mkavi1e3Y?si=WYK3tvfvNFqH1R46"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="work-card-img">
+            <img src="images/poster.jpg" alt="Crypto Landing">
+            </div>
+            <div class="work-card-title">bahasa arab</div>
+            <div class="work-card-desc">
+              dokumentasi pembelajaran bahasa arab meliputti hiwar (percakapan),qiroah,tafsir,dan berbagai tugas lainya.
+            </div>
+            <div class="work-card-tags">
+              <span class="work-card-tag">HTML</span>
+              <span class="work-card-tag">CSS</span>
+              <span class="work-card-tag">JS</span>
+            </div>
+          </a>
+
+          <!-- Work card 2 -->
+          <a
+            class="work-card"
+            href="https://portfolio-kamu-link.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="work-card-img">
+              <img src="images/leptop.jpeg" alt="it">
+            </div>
+            <div class="work-card-title">information technology</div>
+            <div class="work-card-desc">
+              dokumentas pembelajaran IT meliputi web development,progaming,design,dan berbagai project teknologi.
+            </div>
+            <div class="work-card-tags">
+              <span class="work-card-tag">Responsive</span>
+              <span class="work-card-tag">UI Design</span>
+            </div>
+          </a>
+
+          <!-- Work card 3 -->
+          <a
+            class="work-card"
+            href="https://www.youtube.com/watch?v=i2FNtkcBxpw&t=32s"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="work-card-img">
+              <img src="images/TUGAS.jpeg" alt="tahfidz">
+            </div>
+            <div class="work-card-title">tahfidz</div>
+            <div class="work-card-desc">
+              dokumentasi pembelajaran membaca al quraan dengan tartil dan perjalanan menghafal ayat ayat allah.
+            </div>
+            <div class="work-card-tags">
+              <span class="work-card-tag">Prototype</span>
+              <span class="work-card-tag">Figma</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05.</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-content">
+          <p class="contact-text">
+            Saya selalu terbuka untuk peluang baru, kolaborasi, atau hanya
+            sekedar ngobrol! Jangan ragu untuk menghubungi saya jika Anda punya
+            pertanyaan atau ingin bekerja sama.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <h4>Email</h4>
+              <p>zidanbana15@email.com</p>
+              <a href="mailto:zidanbana15@email.com" class="contact-link"
+                >Send Email →</a
+              >
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </div>
+              <h4>Instagram</h4>
+              <p>@banaabizar_</p>
+              <a href="#" class="contact-link">Follow Me →</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </div>
+              <h4>LinkedIn</h4>
+              <p>ZIDAN BANA ABIZAR</p>
+              <a href="#" class="contact-link">Connect →</a>
+            </div>
+          </div>
+
+          <a href="mailto:zidanbana15@email.com" class="btn-primary contact-btn">
+            <span>Let's Talk!</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    ...
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            Designed &amp; Built by <span class="highlight">ZIDAN BANA ABIZAR</span>
+          </p>
+          <p class="footer-sub">© 2025 All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Panggil JS eksternal -->
+    <script src="script.js"></script>
+  </body>
+</html>

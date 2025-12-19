@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Flexbox</title>
+    <!-- add pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- add style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Flexbox — Latihan Tugas</h1>
+      <hr />
+      <h2>Latihan 1: Pricing Box</h2>
+      <!-- wadah/parent dari flexbox -->
+      <div class="flexbox-area">
+        <!-- flex items (semua yg ada di dalam) -->
+        <div class="card">
+          <h3>Basic</h3>
+        </div>
+        <div class="card pro-blue">
+          <h3>Pro</h3>
+        </div>
+        <div class="card">
+          <h3>Enterprise</h3>
+        </div>
+      </div>
+      <!-- end flexbox-area -->
+      <br />
+      <hr />
+      <br />
+      <h2>Latihan 2: Alert Info</h2>
+      <div class="flexbox-area alert-info">
+        <p>ℹ️ Info: Jangan sampai ketumpahan indomie!</p>
+        <button type="button" onclick="this.parentElement.style.display='none'">
+          ❌
+        </button>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

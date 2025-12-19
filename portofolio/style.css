@@ -1,0 +1,422 @@
+/* Variabel Warna */
+:root {
+    --color-primary: #FFD700; /* Kuning terang untuk aksen */
+    --color-background: #141414; /* Abu-abu sangat gelap untuk latar belakang */
+    --color-card: #202020; /* Sedikit lebih terang untuk card */
+    --color-text: #FFFFFF; /* Putih */
+    --color-text-subtle: #AAAAAA; /* Abu-abu terang untuk teks sekunder */
+    --color-accent-btn: #FFD700; /* Kuning untuk tombol di work */
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+section {
+    padding: 80px 5% 40px; /* Padding atas, samping, bawah */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Tombol Dasar */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+}
+
+.primary-btn:hover {
+    background-color: #FFC700;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.secondary-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+.small-btn {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background-color: var(--color-background);
+    padding: 0;
+    /* Hero section menggunakan warna kuning dan gelap */
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh; /* Agar tinggi penuh */
+    padding: 0 5%;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.greeting {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.text-content h1 {
+    font-size: 4em;
+    margin: 0;
+    line-height: 1;
+}
+
+.tagline {
+    font-size: 1.5em;
+    color: var(--color-text-subtle);
+    margin-bottom: 30px;
+}
+.tagline **{
+    color: var(--color-text); /* Highlight text */
+}
+
+.image-content {
+    background-color: var(--color-primary); /* Latar belakang kuning di kanan atas */
+    border-radius: 0 0 0 500px; /* Bentuk melengkung, disesuaikan agar mirip */
+    padding: 100px 100px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+    flex-shrink: 0;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 400px; /* Atur dimensi agar proporsional */
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: 2;
+    filter: grayscale(10%); /* Sedikit efek agar sesuai tone */
+}
+
+
+/* --- ABOUT SECTION --- */
+.about-section {
+    background-color: var(--color-card);
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 450px; /* Tinggi tetap */
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.about-text .subtitle {
+    color: var(--color-text-subtle);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* --- SKILLS SECTION --- */
+.skills-section {
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: var(--color-card);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 250px; /* Agar tinggi sama */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-icon {
+    background-color: var(--color-background);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.skill-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.skill-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: var(--color-text-subtle);
+    margin-bottom: 20px;
+}
+
+/* --- WORKS SECTION --- */
+.works-section {
+    padding-bottom: 80px;
+}
+
+.works-category {
+    margin-bottom: 60px;
+}
+
+.works-category h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    position: relative;
+    /* Garis horizontal */
+}
+
+.works-category h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default 4 kolom */
+    gap: 20px;
+}
+
+.two-column-grid {
+    grid-template-columns: 1fr 1fr; /* 2 kolom untuk template */
+}
+
+.three-column-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk report */
+}
+
+.work-item {
+    background-color: var(--color-card);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work-item img {
+    width: 100%;
+    height: 200px; /* Tinggi gambar diatur agar seragam */
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.work-item:hover img {
+    transform: scale(1.05);
+}
+
+.work-info {
+    padding: 15px;
+}
+
+.work-info h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.work-info p {
+    font-size: 0.9em;
+    color: var(--color-text-subtle);
+    margin-bottom: 10px;
+}
+
+.tag-btn {
+    background-color: var(--color-accent-btn);
+    color: var(--color-background);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-name {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    font-size: 0.9em;
+    color: var(--color-text-subtle);
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* --- Responsive (Sederhana) --- */
+@media (max-width: 992px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .three-column-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        min-height: auto;
+        padding-top: 50px;
+    }
+
+    .image-content {
+        width: 100%;
+        height: 350px;
+        border-radius: 0;
+        padding: 50px 0 0 0;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    .profile-pic {
+        width: 250px;
+        height: 300px;
+        right: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .text-content {
+        padding-right: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+    .about-text h2 {
+        text-align: center;
+    }
+    .about-image {
+        height: 300px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+    .two-column-grid, .three-column-grid {
+        grid-template-columns: 1fr;
+    }
+}

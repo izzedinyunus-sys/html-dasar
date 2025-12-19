@@ -1,0 +1,230 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reset dasar: Menghilangkan padding/margin default browser */
+* {
+    box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar/tinggi elemen */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style untuk keseluruhan halaman */
+body {
+    font-family: 'Inter', sans-serif; /* Mengatur font utama */
+    background-color: #f4f7f9; /* Warna latar belakang halaman */
+    padding: 20px; /* Jarak dari tepi viewport */
+    display: flex;
+    justify-content: center; /* Menengahkan konten di halaman */
+}
+
+/* Wadah utama konten */
+.container {
+    width: 100%;
+    max-width: 900px; /* Batas lebar maksimal konten */
+}
+
+/* Style untuk setiap bagian/kartu utama (Alert, Profile, Pricing) */
+.card-section {
+    background-color: #ffffff; /* Latar belakang putih */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+    padding: 20px;
+    margin-bottom: 25px; /* Jarak antar bagian */
+}
+
+/* Judul setiap bagian (1 Alert Info, 2 Profile Card, dll) */
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Garis pemisah di bawah judul */
+}
+
+/* --- 1. Alert Info Styling --- */
+.alert {
+    display: flex; /* Menggunakan Flexbox untuk mensejajarkan ikon, teks, dan tombol tutup */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Style spesifik untuk alert jenis info */
+.alert.info {
+    background-color: #e6f7ff; /* Latar biru muda */
+    border: 1px solid #91d5ff; /* Border biru */
+    color: #096dd9; /* Teks biru tua */
+}
+
+/* Ikon di dalam alert */
+.alert .material-icons {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Teks paragraf di dalam alert */
+.alert p {
+    flex-grow: 1; /* Memungkinkan teks mengambil ruang yang tersisa */
+    margin: 0;
+}
+
+/* Tombol tutup (simbol &times;) */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #096dd9;
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
+    margin-left: 15px;
+    padding: 0;
+    line-height: 1;
+}
+
+/* --- 2. Profile Card Styling --- */
+.profile-card {
+    display: flex;
+    flex-direction: column; /* Menyusun item secara vertikal */
+    align-items: center; /* Menengahkan item secara horizontal */
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto; /* Menengahkan kartu di dalam section */
+}
+
+/* Wadah gambar untuk penempatan status */
+.profile-img-container {
+    position: relative; /* Menjadi acuan posisi untuk status badge */
+    margin-bottom: 15px;
+}
+
+/* Gambar profil */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Membuat gambar bundar */
+    object-fit: cover;
+    border: 3px solid #f4f7f9;
+}
+
+/* Badge status (Active) */
+.status {
+    position: absolute; /* Memposisikan badge secara absolut */
+    top: 0;
+    right: 0;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Warna spesifik untuk status 'active' */
+.status.active {
+    background-color: #52c41a;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-role {
+    font-size: 14px;
+    color: #888;
+}
+
+/* --- 3. Pricing Card Styling --- */
+.pricing-container {
+    display: flex; /* Menggunakan Flexbox untuk tata letak horizontal kartu harga */
+    justify-content: space-between; /* Memberi ruang yang sama di antara kartu */
+    gap: 20px; /* Jarak antar kartu */
+    flex-wrap: wrap; /* Memungkinkan kartu turun ke baris baru */
+}
+
+.pricing-card {
+    flex: 1 1 30%; /* Fleksibel, lebar dasar sekitar 30% dari wadah */
+    padding: 30px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: all 0.3s; /* Transisi untuk efek hover/highlight */
+}
+
+/* Style untuk kartu yang disorot (Pro) */
+.pricing-card.highlighted {
+    border-color: #4a6cf7; /* Border biru */
+    box-shadow: 0 4px 15px rgba(74, 108, 247, 0.2); /* Bayangan biru */
+}
+
+.plan-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk harga */
+.price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4a6cf7;
+    margin-bottom: 20px;
+}
+
+/* Daftar fitur */
+.features {
+    list-style: none; /* Menghilangkan bullet point default */
+    padding: 0;
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.features li {
+    margin-bottom: 8px;
+}
+
+/* Tombol 'Pilih Paket' */
+.select-btn {
+    background-color: #ffffff;
+    color: #4a6cf7;
+    border: 1px solid #4a6cf7;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Lebar penuh kartu */
+}
+
+/* Tombol utama (untuk kartu Pro yang disorot) */
+.select-btn.primary {
+    background-color: #4a6cf7;
+    color: #ffffff;
+}
+
+.select-btn:hover {
+    opacity: 0.85; /* Efek transparansi saat di-hover */
+}
+
+/* Media Query untuk Responsivitas (Layar kecil/ponsel) */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        align-items: center;
+    }
+
+    .pricing-card {
+        flex: 1 1 100%;
+        max-width: 300px; /* Batasi lebar kartu di perangkat kecil */
+        margin-bottom: 20px;
+    }
+}

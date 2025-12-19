@@ -1,0 +1,42 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* wadah/parent flexbox */
+.flexbox-area {
+  /* wajib flex */
+  display: flex;
+  /* atur arah flex items */
+  /* default = row (row-reverse, column, column-reverse) */
+  flex-direction: row;
+  /* atur jarak antar items */
+  gap: 12px;
+  /* atur posisi horizontal */
+  /* default = flex-start (flex-end,center,space-between) */
+  justify-content: center;
+  /* atur penempatan items */
+  /* default = flex-start (flex-end,center,stretch,dll) */
+  align-items: center;
+}
+.pro-blue {
+  border: 2px solid blue;
+  height: 250px;
+  width: 250px;
+}
+
+.alert-info {
+  background: #a0e3fd;
+  justify-content: space-between;
+  padding: 10px;
+}
+.alert-info button {
+  font-size: 12px;
+  background: #52a6d0;
+}

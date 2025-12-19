@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind CSS Basic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- breakpoints: sm: md: lg: xl: 2xl: -->
+    <!-- responsive text -->
+    <div
+      class="text-center lg:bg-sky-300 md:bg-amber-300 sm:bg-teal-300 bg-red-300 p-6 lg:text-6xl md:text-3xl sm:text-xl text-sm"
+    >
+      HELLO WORLD!
+    </div>
+
+    <!-- flexbox: pke class .flex -->
+    <!-- mx-auto : agar element tengah -->
+    <div class="container mx-auto bg-slate-200">
+      <!-- flex-row: arah horizontal -->
+      <!-- justify-content: item mentok kiri-kanan -->
+      <!-- items-center: items rata tengah secara vertikal -->
+      <header
+        class="flex bg-indigo-500 text-white p-4 justify-between items-center"
+      >
+        <h1 class="text-3xl my-1">Wr Pak Bejo</h1>
+        <!-- nav di hidden saat ukuran small kebawah -->
+        <!-- .gap : jarak antar item -->
+        <nav class="hidden md:flex gap-3 text-sm">
+          <a href="#" class="bg-indigo-700 py-1 px-4 rounded-md">🏠 Home</a>
+          <a href="#" class="bg-indigo-700 py-1 px-4 rounded-md">📝 Blog</a>
+          <a href="#" class="bg-indigo-700 py-1 px-4 rounded-md">🖼️ Gallery</a>
+          <a href="#" class="bg-indigo-700 py-1 px-4 rounded-md">☎️ Contact</a>
+          <a href="#" class="bg-indigo-700 py-1 px-4 rounded-md">💬 Feedback</a>
+        </nav>
+        <!-- humberger icon muncul saat ukuran small kebawah -->
+        <div class="md:hidden text-3xl">☰</div>
+      </header>
+      <!-- grid galeri foto -->
+      <!-- grid-cols = jumlah kolom -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 text-white text-center"
+      >
+        <div class="bg-amber-300 h-60">Box 1</div>
+        <div class="bg-amber-400 h-60">Box 2</div>
+        <div class="bg-amber-500 h-60">Box 3</div>
+        <div class="bg-amber-600 h-60">Box 4</div>
+        <div class="bg-amber-700 h-60">Box 5</div>
+        <div class="bg-amber-800 h-60">Box 6</div>
+      </div>
+    </div>
+  </body>
+</html>
